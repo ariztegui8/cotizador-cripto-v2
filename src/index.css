@@ -28,3 +28,91 @@ body{
     font-size: 18px;
    
 }
+
+.btn-form{
+    background-color: #0c025e !important;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.container-resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-resultados img{
+    width: 30%;
+}
+
+.container-parrafos{
+    color: #fff;
+    font-size: 16px;
+}
+
+.container-parrafos span{
+    font-weight: 600;
+}
+
+.price{
+    font-size: 24px;
+}
+
+/* Spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+  /* media queries */
+  @media screen and (max-width: 992px) {
+     .logo{
+         width: 50%;
+     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-resultados {
+      flex-direction: column;
+    }
+  }
+  
